@@ -1,0 +1,527 @@
+/*Universal rules*/
+
+html {
+    font-size: 24px;
+    font-family: "Helvetica", sans-serif;
+}
+
+body{
+    line-height: 1;
+}
+
+.flex{
+    display:flex;
+}
+
+a{
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Nav bar*/
+
+header .flex {
+    height: auto;
+    margin: 0 1.3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header .flex{
+    margin: 0.6rem auto;
+    align-items: center;
+}
+
+header .desktop img{
+    margin-right: 0.5rem;
+}
+
+header .desktop span{
+    color: maroon;
+}
+
+header .desktop a{
+    color: maroon;
+    font-size: 0.8rem;
+    margin:0 0.5rem;
+}
+
+/*Nav bar mobile*/
+
+header .mobile {
+    height: 2.7rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Main Body*/
+
+/*Jumbtron*/
+
+.jumbotron{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 30%;
+    align-items: flex-end;
+    transition: height 1s;
+}
+
+.jumbotron div {
+    flex-wrap: wrap;
+    color: aqua;
+    position: relative;
+}
+
+.jumbotron a{
+    background-color: azure;
+    text-align: center;
+    align-items: center;
+    color: blue;
+    padding: 0.75vw 1.5vw;
+}
+
+/*Info 1 (quote and info)*/
+
+.information1 {
+    margin: 0.2rem 0;
+    flex-wrap: wrap;
+}
+
+/*Info 1 (main section)*/
+
+.main {
+    width: 100%;
+    height: 20rem;
+    background-image: url(../images/information-main.jpg);
+    background-size: cover;
+    color: azure;
+    font-weight: 300;
+    transition: color 1s, margin 700ms ease-in 300ms;
+}
+
+.main .layover {
+    height: 100%;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.main .content {
+    max-width: 60%;
+    flex-wrap: wrap;
+    position: relative;
+    left: 2rem;
+    bottom: 2rem;
+}
+
+.main h1 {
+    font-size: 6vw;
+    font-weight: 300;
+    padding-bottom: 0.8rem;
+}
+
+.main p {
+    font-size: 1.65vw;
+    padding-bottom: 0.8rem;
+    line-height: 1rem;
+}
+
+/*Info 1 (side flex section - 3 boxes)*/
+
+.side{
+    height: 7rem;
+    width: 100%;
+    justify-content: space-between;
+    color: blanchedalmond;
+}
+
+.side .info {
+    width: 33%;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.side a{
+    color: azure;
+    width: 100%;
+    height: 100%;
+}
+
+.side .layover{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.info p{
+    font-size: 2.4vw;
+    font-weight: 300;
+    margin: 0.5rem 1rem;
+}
+
+/*box 1 - campus walking*/
+
+#orientation {
+    background-image:url(../images/information-orientation.jpg);
+}
+
+/*box 2 - campus class*/
+
+#campus {
+    background-image: url(../images/information-campus.jpg);
+}
+
+/*box 3 - bearded man*/
+#lecture {
+    background-image: url(../images/information-guest-lecture.jpg);
+}
+
+
+/*Info section 2 (Courses)*/
+
+/*Main section*/
+
+.start{
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 10%;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.start span{
+    color: azure;
+    text-align: center;
+    width: 100%;
+}
+
+/*Flex section (6 boxes)*/
+
+.category{
+    width:100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course img { 
+    display:block;
+    width:100%;
+}
+
+.course .brief{
+    margin:16px;
+}
+
+.course h1{
+    font-weight: 400;
+    font-size: 2vw;
+    transition: color 700ms;
+}
+
+/*Info section 3 (Thesis)*/
+
+/*Cover*/
+
+.exhibit{
+    flex-direction: column;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.exhibit span {
+    color: azure;
+    text-align: center;
+    width: 100%;
+}
+
+/*All thesis*/
+
+.thesis {
+    width:100%;
+}
+
+/*Video*/
+
+#video{
+    margin: 1rem;
+}
+
+.video {
+    flex-direction: column;
+}
+
+.video video{
+    width: 100%;
+}
+
+.video h1{
+    margin: 1rem 0 0.5rem 0.7rem;
+}
+
+.video p{
+    max-width: 90%;
+    margin-left: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.thesis h1{
+    font-weight:400;
+    font-size: 2.5vw;
+}
+
+.thesis p{
+    font-weight: 300;
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+    color:gray;
+}
+
+/*Other thesis (2 boxes)*/
+
+.text {
+    flex-direction: column;
+    width: 40%;
+    margin: 1rem 1rem 1rem 0;
+    justify-content: space-between;
+}
+
+/*Box 1 Fisma*/
+
+.article{
+    align-items: center;
+}
+
+.article img{
+    width:35%;
+}
+
+.article div{
+    display: inline;
+}
+
+.text h1 {
+    margin: 0.4rem 0.7rem;
+}
+
+.text p{
+    margin: 0.4rem 0.7rem;
+    max-width: 60%;
+}
+
+/*Footer*/
+
+footer{
+    height: 8rem;
+    background-image: url(../images/banner.jpg);
+    background-position: right bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: flex-end;
+}
+
+footer .copyright{
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 1vw;
+    color: azure;
+    flex-wrap: wrap;
+}
+
+footer span, footer a{
+    margin: 1rem;
+}
+
+---------------------------------
+/*Responsive Design*/
+
+/*Nav bar - logos only*/
+
+@media only screen and (min-width 470px)
+    .mobile{
+        display: none;
+}
+
+/*Jumbotron section*/
+
+@media only screen and (min-width: 470px)
+.jumbotron {
+    height: 31rem;
+}
+
+@media only screen and (min-width: 470px)
+    .jumbotron div{
+        max-width: 40%;
+        left: 2rem;
+        bottom: 2rem;
+}
+
+@media only screen and (min-width: 470px)
+    .jumbotron h1 {
+        font-weight: 300;
+        font-size:6rem;
+        padding-bottom:0.8rem;
+}
+
+@media only screen and (min-width: 470px)
+    .banner h2 {
+      font-size: 1.65vw;
+      font-weight: 300;
+      padding-bottom: 1.2rem;
+}
+
+/*Info 1 ( side flex flex section - 3 boxes)*/
+
+@media only screen and (min-width: 470px)
+    .side{
+      margin:0.2rem 0.2rem 0 0.2rem;
+}
+
+
+@media only screen and (min-width: 470px)
+    .side .info {
+        margin: 0 0.2rem;
+        transition: width 700ms, margin 300ms;
+}
+
+@media only screen and (min-width: 470px)
+    .info h1{
+        font-size: 2.7vw;
+        font-weight:300;
+}
+
+@media only screen and (min-width: 470px)
+    .info p{
+        display:none;
+}
+
+/*box 1 - campus walking*/
+
+@media only screen and (min-width: 470px)
+    #orientation {
+        background-image:url(../images/information-orientation-mobile.jpg);
+}
+
+/*box 2 - campus lecture*/
+
+@media only screen and (min-width: 470px)
+    #campus {
+        background-image:url(../images/information-campus-mobile.jpg);
+}
+
+/*box 3 - bearded man*/
+
+@media only screen and (min-width: 470px)
+    #lecture {
+        background-image:url(../images/information-guest-lecture-mobile.jpg);
+}
+
+/*Info section 2 (Courses)*/
+
+/*Main section*/
+
+@media only screen and (min-width: 470px)
+    .start .layer {
+        position:absolute;
+        background-color:black;
+        width:100%;
+        height:100%;
+        align-items:center;
+        justify-content:center;
+        left:0;
+        top:0;
+        transition: background-color 700ms 0ms;
+        font-size: 12vw;
+        font-weight: 300;
+}
+
+@media only screen and (min-width: 470px)
+.start span {
+    transition: color 400ms 100ms, width 0ms 200ms;
+    z-index: 3;
+    overflow: hidden;
+}
+
+/*Flex section (6 boxes)*/
+
+@media only screen and (min-width: 470px)
+.start a { 
+    margin: 1rem;
+}
+
+@media only screen and (min-width: 470px)
+.course { 
+    width:17rem;
+    background-color: white;
+    transition: background-color 700ms, color 700ms;
+}
+
+@media only screen and (min-width: 470px)
+.course img { 
+    display:block;
+    width:100%;
+}
+
+@media only screen and (min-width: 470px)
+.course p { 
+    margin: 0.5rem 0;
+    font-weight:300;
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+    color: gray;
+    transition: color 700ms;
+}
+
+/*Info section 3 (Thesis)*/
+
+@media only screen and (min-width: 470px)
+.exhibit .layer { 
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    transition: background-color 700ms 0ms;
+    font-size: 12vw;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 470px)
+.exhibit span {
+    transition: color 400ms 100ms, width 0ms 200ms;
+    z-index: 3;
+    overflow: hidden;
+}
+
+/*Video*/
+
+@media only screen and (min-width: 470px)
+.exhibit a {
+    width: 60%;
+}
+
+@media only screen and (min-width: 470px)
+.article .video {
+    transition: background-color 450ms;
+}
+
+@media only screen and (min-width: 470px)
+.text a {
+    width:100%;
+}
