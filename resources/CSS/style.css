@@ -11,138 +11,230 @@ body{
 
 .flex{
     display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 a{
   display: flex;
   text-decoration: none;
-  color: inherit;
 }
 
-/*Nav bar*/
+/*Nav bar desktop*/
 
-header .flex {
-    height: auto;
-    margin: 0 1.3rem;
-    justify-content: center;
-    flex-wrap: wrap;
+header {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    z-index: 1;
+    height: 69px;
+    background-color: white;
     align-items: center;
+    border-bottom: 1px solid seashell;
+    top:0px;
 }
 
-header .flex{
-    margin: 0.6rem auto;
-    align-items: center;
+header img{
+  height: 50px;
+  padding-left: 10px;
 }
 
-header .desktop img{
-    margin-right: 0.5rem;
+header span{
+    color: indianred
 }
 
-header .desktop span{
-    color: maroon;
+header a{
+    color: black;
+    font-size: 0.9rem;    
+}
+header nav {
+  text-align: right;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
 }
 
-header .desktop a{
-    color: maroon;
-    font-size: 0.8rem;
-    margin:0 0.5rem;
+nav span {
+  display: inline-block;
+  padding-right: 20px; 
 }
 
-/*Nav bar mobile*/
+/*Nav bar mobile blocked on desktop*/
 
-header .mobile {
-    height: 2.7rem;
-    justify-content: space-around;
-    align-items: center;
+.mobile {
+    display: none;
 }
 
 /*Main Body*/
 
-/*Jumbtron*/
+main{
+  padding-top: 72px;
+}
 
-.jumbotron{
-    background-image: url(../images/banner.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+/*Jumbotron*/
+
+.main-banner {
+    height:32rem;
+    width: inherit;
+    background-image: url("../images/banner.jpg");
+    color: aliceblue;
     background-repeat: no-repeat;
-    background-position: 0 30%;
-    align-items: flex-end;
-    transition: height 1s;
+    background-size:cover;
 }
 
-.jumbotron div {
-    flex-wrap: wrap;
-    color: aqua;
-    position: relative;
+.main-banner .content {
+    color: white;
+    width: 50%;
+    position:sticky;
+    top: 10em;
+    padding: 2em 3em;
+    opacity: 1;
+    font-weight: bold;
 }
 
-.jumbotron a{
-    background-color: azure;
+.main-banner .content h1 {
+    font-size: 2em;
+    margin: 0.25em;
+    font-weight: bold;
+}
+
+.main-banner .content h2 {
+    font-size: 1rem;
+    padding-left:0.5rem;
+    line-height: 1.2;     
+}
+
+.main-banner a{
+    font-size: 0.75;
     text-align: center;
-    align-items: center;
-    color: blue;
-    padding: 0.75vw 1.5vw;
+    margin: 0.25em;
+    background-color: indianred;
+    border: none;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+
+.main-banner div{
+    flex-wrap: wrap;
+    position: relative;
+    width: 97%;
 }
 
 /*Info 1 (quote and info)*/
 
 .information1 {
-    margin: 0.2rem 0;
+    margin: 0.3rem 0;
     flex-wrap: wrap;
 }
 
 /*Info 1 (main section)*/
 
-.main {
+.info-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-content: flex-start;
+}
+
+.main-section {
     width: 100%;
-    height: 20rem;
+    height: 35rem;
     background-image: url(../images/information-main.jpg);
     background-size: cover;
-    color: azure;
-    font-weight: 300;
-    transition: color 1s, margin 700ms ease-in 300ms;
+    color:white;
 }
 
-.main .layover {
-    height: 100%;
-    width: 100%;
-    align-items: flex-end;
+.main-section .content {
+    color: white;
+    width: 50%;
+    top: 3em;
+    padding-left:4rem;
+    padding-top: 1.9rem;
 }
 
-.main .content {
-    max-width: 60%;
-    flex-wrap: wrap;
-    position: relative;
-    left: 2rem;
-    bottom: 2rem;
+.main-section .content h1 {
+    font-size:50px;
+    font-weight: 150;
+    padding-bottom: 1rem;
 }
 
-.main h1 {
-    font-size: 6vw;
-    font-weight: 300;
-    padding-bottom: 0.8rem;
+.main-section .content p {
+    font-size:0.8rem;
+    font-style: italic;
+    font-weight: 150px;
+    line-height: 0.9rem;
+    padding-bottom: 1rem;
 }
 
-.main p {
-    font-size: 1.65vw;
-    padding-bottom: 0.8rem;
-    line-height: 1rem;
+.main-section .content h5 {
+    font-size:0.8rem;
+    font-weight: bold;
+    line-height: 0.9rem;
+    padding-bottom: 2rem;
 }
 
 /*Info 1 (side flex section - 3 boxes)*/
 
-.side{
-    height: 7rem;
-    width: 100%;
+.informations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 1em 0 0 0;
+}
+
+.information {
+    width: 31%;
+}
+
+.information-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;border-radius: 10px;
+    padding: 1em 0.1px;
+    border: 2.5rem;
+}
+
+.information img {
+    max-width: 10rem;
+    opacity: 0.6;
+    border-radius: 12px;
+}
+
+.description {
+    background-color: indianred;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 12px;
+}
+
+.information h1 {
+    font-weight: bold;
+}
+
+.information p{
+    padding: .4rem;
+    text-align: center;
+    font-size: .79rem
+}
+
+
+/*
+.side .flex{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    color: blanchedalmond;
+    margin: .5em 0;
 }
 
 .side .info {
-    width: 33%;
+    width: 63%;
+    height: 100%;
     background-size: cover;
-    justify-content: center;
-    align-items: center;
 }
 
 .side a{
@@ -151,38 +243,32 @@ header .mobile {
     height: 100%;
 }
 
-.side .layover{
+.side flex {
     display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    flex-flow:column;
+    align-items:flex-end;
     flex-wrap: wrap;
-    text-align: center;
 }
 
 .info p{
-    font-size: 2.4vw;
+    font-size: 1rem;
     font-weight: 300;
     margin: 0.5rem 1rem;
 }
 
-/*box 1 - campus walking*/
-
 #orientation {
-    background-image:url(../images/information-orientation.jpg);
+    background-image:url(../images/information-orientation-mobile.jpg);
+    width: 65%;
 }
-
-/*box 2 - campus class*/
 
 #campus {
-    background-image: url(../images/information-campus.jpg);
+    background-image: url(../images/information-campus-mobile.jpg);
 }
 
-/*box 3 - bearded man*/
 #lecture {
-    background-image: url(../images/information-guest-lecture.jpg);
+    background-image: url(../images/information-guest-lecture-mobile.jpg);
 }
+
 
 
 /*Info section 2 (Courses)*/
@@ -348,180 +434,21 @@ footer span, footer a{
 ---------------------------------
 /*Responsive Design*/
 
-/*Nav bar - logos only*/
 
-@media only screen and (min-width 470px)
-    .mobile{
-        display: none;
+/*phone*/
+
+@media only screen
+and (max-width: 480px)
+and (min-width: 320px)
+and (orientation: portrait) {
+ 
+  header .mobile img {
+    height: 2.7rem;
+    justify-content: space-around;
+    align-items: center; 
 }
+    
 
-/*Jumbotron section*/
-
-@media only screen and (min-width: 470px)
-.jumbotron {
-    height: 31rem;
-}
-
-@media only screen and (min-width: 470px)
-    .jumbotron div{
-        max-width: 40%;
-        left: 2rem;
-        bottom: 2rem;
-}
-
-@media only screen and (min-width: 470px)
-    .jumbotron h1 {
-        font-weight: 300;
-        font-size:6rem;
-        padding-bottom:0.8rem;
-}
-
-@media only screen and (min-width: 470px)
-    .banner h2 {
-      font-size: 1.65vw;
-      font-weight: 300;
-      padding-bottom: 1.2rem;
-}
-
-/*Info 1 ( side flex flex section - 3 boxes)*/
-
-@media only screen and (min-width: 470px)
-    .side{
-      margin:0.2rem 0.2rem 0 0.2rem;
 }
 
 
-@media only screen and (min-width: 470px)
-    .side .info {
-        margin: 0 0.2rem;
-        transition: width 700ms, margin 300ms;
-}
-
-@media only screen and (min-width: 470px)
-    .info h1{
-        font-size: 2.7vw;
-        font-weight:300;
-}
-
-@media only screen and (min-width: 470px)
-    .info p{
-        display:none;
-}
-
-/*box 1 - campus walking*/
-
-@media only screen and (min-width: 470px)
-    #orientation {
-        background-image:url(../images/information-orientation-mobile.jpg);
-}
-
-/*box 2 - campus lecture*/
-
-@media only screen and (min-width: 470px)
-    #campus {
-        background-image:url(../images/information-campus-mobile.jpg);
-}
-
-/*box 3 - bearded man*/
-
-@media only screen and (min-width: 470px)
-    #lecture {
-        background-image:url(../images/information-guest-lecture-mobile.jpg);
-}
-
-/*Info section 2 (Courses)*/
-
-/*Main section*/
-
-@media only screen and (min-width: 470px)
-    .start .layer {
-        position:absolute;
-        background-color:black;
-        width:100%;
-        height:100%;
-        align-items:center;
-        justify-content:center;
-        left:0;
-        top:0;
-        transition: background-color 700ms 0ms;
-        font-size: 12vw;
-        font-weight: 300;
-}
-
-@media only screen and (min-width: 470px)
-.start span {
-    transition: color 400ms 100ms, width 0ms 200ms;
-    z-index: 3;
-    overflow: hidden;
-}
-
-/*Flex section (6 boxes)*/
-
-@media only screen and (min-width: 470px)
-.start a { 
-    margin: 1rem;
-}
-
-@media only screen and (min-width: 470px)
-.course { 
-    width:17rem;
-    background-color: white;
-    transition: background-color 700ms, color 700ms;
-}
-
-@media only screen and (min-width: 470px)
-.course img { 
-    display:block;
-    width:100%;
-}
-
-@media only screen and (min-width: 470px)
-.course p { 
-    margin: 0.5rem 0;
-    font-weight:300;
-    font-size: 1.3vw;
-    line-height: 1.5vw;
-    color: gray;
-    transition: color 700ms;
-}
-
-/*Info section 3 (Thesis)*/
-
-@media only screen and (min-width: 470px)
-.exhibit .layer { 
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    top: 0;
-    transition: background-color 700ms 0ms;
-    font-size: 12vw;
-    font-weight: 300;
-}
-
-@media only screen and (min-width: 470px)
-.exhibit span {
-    transition: color 400ms 100ms, width 0ms 200ms;
-    z-index: 3;
-    overflow: hidden;
-}
-
-/*Video*/
-
-@media only screen and (min-width: 470px)
-.exhibit a {
-    width: 60%;
-}
-
-@media only screen and (min-width: 470px)
-.article .video {
-    transition: background-color 450ms;
-}
-
-@media only screen and (min-width: 470px)
-.text a {
-    width:100%;
-}
