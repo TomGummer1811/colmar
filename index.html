@@ -9,7 +9,8 @@
      
     <!-- Nav Bar Desktop -->
     
-     <header class = "header flex">
+    <header class = "header">
+    <div class = "desktop flex">
         <img src="./resources/images/ic-logo.svg">
         <h1>COLMAR<span>ACADEMY</span></h1>
       <nav>
@@ -18,7 +19,7 @@
           <span><a href="#companies">Our Companies</a></span>
         <span><a href="#signin">Sign In</a></span>
       </nav>
-       
+    </div>
     <!-- Nav Bar Mobile -->
          
     <div class="mobile flex"> 
@@ -48,7 +49,7 @@
 <!-- Info section 1 (Quote and Info) -->
 
 <!-- Main section -->
-      <section class="information1"> 
+<section class="information1"> 
 <div class="main-section">
     <div class="content">
       <h1>It doesn't hurt<br>to keep practicing</h1>
@@ -84,103 +85,95 @@
   </div>
   </section> 
 
-      <!-- Info section 2 (Courses) -->
-      <section class="start flex" id="start">
-      
-      <!-- Main section -->
+<!-- Info section 2 (Courses) -->
+<section class="learn" id="learn">
+<div class="start-content">
           
-      <!-- Side flex section (6 boxes) -->
-          <div class="category flex">
+    <h1>Jump in..<br>Start Learning</h1>
+        <a href="#">Now</a>
+</div> 
+</section>
+    
+<section class="start flex" id="start">
+     
+<!-- Main section -->
+          
+<!-- Side flex section (6 boxes) -->
+    
+<div class="category flex">
               
-              <!-- Box 1 -->
-              <a href="#">
-                  <div class="course">
-                      <img src="resources/images/course-software.jpg" alt="software">
-                      <div class="brief">
-                        <h1>Software Engineering</h1>
-                        <p>COURSE</p>
-                        <p>Web Development, Mobile Development, IoT, APIs</p>
-                      </div>
-                  </div>
-              </a>
-              
-              <!-- Box 2 -->
-              <a href="#">
-                  <div class="course">
-                      <img src="resources/images/course-computer-art.jpg" alt="computer">
-                      <div class="brief">
-                        <h1>Computer Art</h1>
-                        <p>COURSE</p>
-                        <p>Imaging &amp;Design, Web Design, Motion Graphics &amp;Visual Effects, Computer Animation</p>
-                      </div>
-                  </div>
-              </a>
-              
-              <!-- Box 3 -->
-              <a href="#">
-                  <div class="course">
-                      <img src="resources/images/course-design.jpg" alt="design">
-                      <div class="brief">
-                        <h1>Design</h1>
-                        <p>COURSE</p>
-                        <p>User Experience Design, User Research, Visual Design</p>
-                      </div>
-                  </div>
-              </a>
-              
-          <!-- Box 4 -->
-              <a href="#">
-                  <div class="course">
-                      <img src="resources/images/course-data.jpg" alt="data">
-                      <div class="brief">
-                        <h1>Data</h1>
-                        <p>COURSE</p>
-                        <p>Data Science, Big Data, SQL, Data Visualisation</p>
-                      </div>
-                  </div>
-              </a>
-         
-         <!-- Box 5 -->
-              <a href="#">
-                  <div class="course">
-                      <img src="resources/images/course-business.jpg" alt="business">
-                      <div class="brief">
-                        <h1>Business</h1>
-                        <p>COURSE</p>
-                        <p>Product Development, Business Development, Start-up</p>
-                      </div>
-                  </div>
-              </a>
-              
-         <!-- Box 6 -->
-              <a href="#">
-                  <div class="course">
-                      <img src="resources/images/course-marketing.jpg" alt="computer">
-                      <div class="brief">
-                        <h1>Marketing</h1>
-                        <p>COURSE</p>
-                        <p>Analytics, Content Marketing, Mobile Marketing</p>
-                      </div>
-                  </div>
-              </a>      
-          </div>
-      </section>
+<!-- Heading -->
+    
+<div id = "courses" class = "container-courses">
 
+<!-- Box 1 -->
+    
+<div class = "courses-detail flex-container">
+    
+    <div class="course-info">
+          <img src="resources/images/course-computer-art.jpg">
+          <h1>Software Engineering</h1>
+          <p>Web Development, Mobile Development, iOT, APIs</p>
+      </div>
+
+<!-- Box 2 -->
+    
+    <div class="course-info">
+          <img src="resources/images/course-computer-art.jpg">
+          <h1>Computer Art</h1>
+          <p>Imaging &amp; Design,Web Design, Motion Graphics </p>
+      </div>
+              
+<!-- Box 3 -->
+
+    <div class="course-info">
+        <img src="resources/images/course-computer-art.jpg">
+        <h1>Design</h1>
+        <p>User Experience Design, User Research, Visual Design</p>
+    </div>
+
+<!-- Box 4 -->
+    
+    <div class="course-info">
+        <img src="resources/images/course-computer-art.jpg">
+        <h1>Data</h1>
+        <p>Data Science, Big Data, SQL, Data Visualisation</p>
+    </div>
+
+<!-- Box 5 -->
+    
+<div class="course-info">
+  <img src="resources/images/course-computer-art.jpg">
+    <h1>Business</h1>
+    <p>Product Development, Business Development, Start-up</p>
+</div>
+    
+<!-- Box 6 -->  
+    
+    <div class="course-info">
+          <img src="resources/images/course-computer-art.jpg">
+          <h1>Marketing</h1>
+          <p>Analytics, Content Marketing, Mobile Marketing</p>
+      </div>
+    
+</div>
+</div>
+</div>
+    
  <!-- Info section 3 (Thesis) -->
-      <section class="exhibit flex">
-             
-          <span>Thesis Exhibits</span>
-          
-          <div class="thesis flex">
-            
-     <!-- Video Thesis -->
-              <a href="#" id = "video">
-                  <div class="video flex">
-                  <video autoplay loop src="resources/videos/thesis.mp4">Urban Video
-                  </video>
-                  <h1>Reimagine Urban</h1>
-                  <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed nn accumsan urna. Phasellus sed consequat ex. Etiameget magna laoreet, effocotur dolor consequat, tristique ligula."</p>
-                 </div>
+<section class="exhibit flex">
+<span>Thesis Exhibits</span>
+    <div class="thesis flex">
+
+        <!-- Video Thesis -->
+
+<a href="#" id = "video">
+ <div class="video flex">
+ <video autoplay loop src="resources/videos/thesis.mp4">Urban Video</video>
+<h1>Reimagine Urban</h1>
+     <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed nn accumsan urna. Phasellus sed consequat ex. Etiameget magna laoreet, effocotur dolor consequat, tristique ligula."</p>
+
+    </div>
               </a>
               
       <!-- Other Thesis (2 boxes) -->     
