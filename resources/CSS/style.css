@@ -321,7 +321,6 @@ main{
 
 }
 
-
 /*Info section 3 (Thesis)*/
 
 /*Cover*/
@@ -408,13 +407,12 @@ video-flex{
 }
 
 .thesis-info {
-  width: 16rem;
   color: white;
   padding:1rem;
-  border-radius: 22px;
-  flex-direction: column;
-  width: 11.3rem;
-  margin: 1rem;
+  width: 11rem;
+  margin: 1.6rem;
+  padding-bottom: 5rem;
+
 }
 
 .thesis-info h1{
@@ -422,12 +420,14 @@ video-flex{
     font-size: 1.05rem;
     padding-left: .5rem;
     padding-top:.5rem;
+    text-align: center
 }
 
 .thesis-info p{
     font-weight: 100;
     font-size: .8rem;
     padding: .5rem;
+    text-align: center
 }
 
 .thesis-info img {
@@ -436,38 +436,11 @@ video-flex{
 }
 
 
-
-/*Box 1 Fisma*
-
-.article{
-    align-items: center;
-}
-
-.article img{
-    width:35%;
-}
-
-.article div{
-    display: inline;
-}
-
-.text h1 {
-    margin: 0.4rem 0.7rem;
-}
-
-.text p{
-    margin: 0.4rem 0.7rem;
-    max-width: 60%;
-}
-*/
-
 /*Footer*/
 
 footer{
-    height: 8rem;
-    background-image: url(../images/banner.jpg);
-    background-position: right bottom;
-    background-size: cover;
+    height: 3.1rem;
+    background-color: black;
     background-attachment: fixed;
     align-items: flex-end;
 }
@@ -475,14 +448,16 @@ footer{
 footer .copyright{
     width: 100%;
     justify-content: space-between;
-    font-weight: 300;
-    font-size: 1vw;
+    font-weight: 400;
+    font-size: .8rem;
     color: azure;
     flex-wrap: wrap;
 }
 
-footer span, footer a{
+footer a{
     margin: 1rem;
+    display: inline-block;
+    color: aliceblue;
 }
 
 ---------------------------------
