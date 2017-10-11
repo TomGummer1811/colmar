@@ -279,7 +279,7 @@ main{
 }
 #courses {
   top:0.5rem;
-  padding-top: 4rem
+  padding-top: 1.5rem
 }
 
 #courses .flex-container {
@@ -351,7 +351,7 @@ main{
     width: 100%;
     flex-flow: wrap;
     flex-direction:row;
-    padding-top: 5px;
+    padding-top: 1.5rem;
 }
 .video-detail{
     flex-flow: wrap;
@@ -365,6 +365,7 @@ main{
     justify-content:center;
     text-align:center;
     border-radius: 18px;
+    
 }
 
 video-flex{
@@ -393,15 +394,6 @@ video-flex{
 
 }
 
-.thesis h1{
-    font-weight:400;
-    font-size: 2.5vw;
-}
-
-.thesis p{
-    font-weight: 300;
-    color:gray;
-}
 
 /*Other thesis (2 boxes)*/
 
@@ -412,7 +404,53 @@ video-flex{
     justify-content: space-between;
 }
 
-/*Box 1 Fisma*/
+#thesis {
+  top:0.5rem;
+  padding-top: 1.5rem
+}
+
+#thesis .flex-container {
+  margin: auto;
+  width: 1100px;
+}
+
+#thesis .flex-container{
+    justify-content:center;
+    width: 100%;
+    display:flex;
+    flex-flow: wrap;
+    flex-direction:row-reverse;
+    padding-top: 5px;
+    
+}
+
+.thesis-info {
+  width: 11rem;
+  height: 10rem;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  font-size: 0.7rem;
+  padding: 11px;
+  margin: 15px 15px;
+  display: inline-block;
+  justify-content: space-between;
+  border-radius: 12px;
+    
+}
+
+.thesis-info p{
+    font-weight: 200;
+}
+
+.thesis-info img {
+  width: 9rem;
+
+}
+
+
+
+/*Box 1 Fisma*
 
 .article{
     align-items: center;
@@ -434,6 +472,7 @@ video-flex{
     margin: 0.4rem 0.7rem;
     max-width: 60%;
 }
+*/
 
 /*Footer*/
 
