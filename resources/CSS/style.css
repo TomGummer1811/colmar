@@ -223,54 +223,6 @@ main{
 }
 
 
-/*
-.side .flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: .5em 0;
-}
-
-.side .info {
-    width: 63%;
-    height: 100%;
-    background-size: cover;
-}
-
-.side a{
-    color: azure;
-    width: 100%;
-    height: 100%;
-}
-
-.side flex {
-    display: flex;
-    flex-flow:column;
-    align-items:flex-end;
-    flex-wrap: wrap;
-}
-
-.info p{
-    font-size: 1rem;
-    font-weight: 300;
-    margin: 0.5rem 1rem;
-}
-
-#orientation {
-    background-image:url(../images/information-orientation-mobile.jpg);
-    width: 65%;
-}
-
-#campus {
-    background-image: url(../images/information-campus-mobile.jpg);
-}
-
-#lecture {
-    background-image: url(../images/information-guest-lecture-mobile.jpg);
-}
-
-
-
 /*Info section 2 (Courses)*/
 
 /*Main section*/
@@ -280,7 +232,6 @@ main{
     background-image: url(../images/cristy1.jpg);
     background-attachment: fixed;
     background-size: cover;
-    height: 100%;
     background-position: 0 10%;
     flex-direction: wrap;
     overflow: hidden;
@@ -290,6 +241,7 @@ main{
 .learn{
     margin: 0.3rem 0;
     flex-wrap: wrap;
+    height: 500px;
 }
 
 .start-content{
@@ -300,8 +252,9 @@ main{
     background-position: center;
     text-align: center;
     width:100%;
-    position: sticky;
+    height:100%;
 }
+
 
 .start-content a {
     font-size: 0.75;
@@ -313,10 +266,17 @@ main{
     padding: 20px;
     display: inline-block;
     margin: 4px 2px;
+    position: sticky;
 }
 
 /*Flex section (6 boxes)*/
-
+ .start span {
+    color: azure;
+    font-size:3rem;
+    text-align: center;
+    width: 100%;
+    padding-top: 2.5rem;
+}
 #courses {
   top:0.5rem;
   padding-top: 4rem
@@ -383,32 +343,35 @@ main{
 
 /*All thesis*/
 
-.thesis {
-    width:50%;
+#video {
+    width:90%;
+    display: flex;
 }
 
 /*Video*/
 
-#video{
-    margin: 1rem;
-}
-
-.video {
-    flex-direction: column;
-}
-
-.video video{
+.video-flex {
+    width:100%;
+    text-align:center;
+    justify-content:center;
     width: 100%;
+    flex-flow: wrap;
+    flex-direction:row;
+    padding-top: 5px;
 }
 
-.video h1{
-    margin: 1rem 0 0.5rem 0.7rem;
+.video-flex video{
+    border: 1rem solid black;
+    width:100%;
+    justify-content:center;
+    text-align:center;
 }
 
-.video p{
-    max-width: 90%;
-    margin-left: 0.7rem;
-    margin-bottom: 1rem;
+
+.video-flex h1{
+}
+
+.video-flex p{
 }
 
 .thesis h1{
@@ -418,8 +381,6 @@ main{
 
 .thesis p{
     font-weight: 300;
-    font-size: 1.3vw;
-    line-height: 1.5vw;
     color:gray;
 }
 
