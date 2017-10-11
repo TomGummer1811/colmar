@@ -377,13 +377,14 @@ video-flex{
     font-size: 2rem;
     color: azure;
     padding-bottom: .8rem;
+    padding-top: 1rem;
 }
 
 .video-flex p{
     font-weight:100;
     font-size: 1rem;
     color: azure;
-    padding-bottom: 2rem;
+    padding-bottom: .2rem;
     width: 80%;
     justify-content:center;
     text-align:center;
@@ -391,9 +392,7 @@ video-flex{
     margin-right: 25px;
     display: inline-block;
     line-height: 1.5;
-
 }
-
 
 /*Other thesis (2 boxes)*/
 
@@ -405,47 +404,35 @@ video-flex{
 }
 
 #thesis {
-  top:0.5rem;
-  padding-top: 1.5rem
-}
-
-#thesis .flex-container {
-  margin: auto;
-  width: 1100px;
-}
-
-#thesis .flex-container{
-    justify-content:center;
-    width: 100%;
-    display:flex;
-    flex-flow: wrap;
-    flex-direction:row-reverse;
-    padding-top: 5px;
-    
+  padding-top: .1rem;
 }
 
 .thesis-info {
-  width: 11rem;
-  height: 10rem;
-  background-color: black;
-  opacity: 0.8;
+  width: 16rem;
   color: white;
-  font-size: 0.7rem;
-  padding: 11px;
-  margin: 15px 15px;
-  display: inline-block;
-  justify-content: space-between;
-  border-radius: 12px;
-    
+  padding:1rem;
+  border-radius: 22px;
+  flex-direction: column;
+  width: 11.3rem;
+  margin: 1rem;
+}
+
+.thesis-info h1{
+    font-weight: 400;
+    font-size: 1.05rem;
+    padding-left: .5rem;
+    padding-top:.5rem;
 }
 
 .thesis-info p{
-    font-weight: 200;
+    font-weight: 100;
+    font-size: .8rem;
+    padding: .5rem;
 }
 
 .thesis-info img {
-  width: 9rem;
-
+    border: 1rem solid black;
+    border-radius: 22px;
 }
 
 
