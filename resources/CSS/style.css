@@ -290,7 +290,7 @@ main{
 .flex-container{
     justify-content:center;
     width: 100%;
-    display: inline-flex;
+    display:flex;
     flex-flow: wrap;
     flex-direction:row-reverse;
     padding-top: 5px;
@@ -322,8 +322,6 @@ main{
 }
 
 
-
-
 /*Info section 3 (Thesis)*/
 
 /*Cover*/
@@ -339,19 +337,15 @@ main{
     color: azure;
     text-align: center;
     width: 100%;
+    padding-bottom: .5rem;
 }
 
 /*All thesis*/
 
-#video {
-    width:90%;
-    display: flex;
-}
-
 /*Video*/
 
-.video-flex {
-    width:100%;
+.container-video{
+    width:90%;
     text-align:center;
     justify-content:center;
     width: 100%;
@@ -359,19 +353,44 @@ main{
     flex-direction:row;
     padding-top: 5px;
 }
-
-.video-flex video{
-    border: 1rem solid black;
-    width:100%;
-    justify-content:center;
-    text-align:center;
+.video-detail{
+    flex-flow: wrap;
+    flex-direction:row;
+    padding-top:2rem;
 }
 
+.video-flex video{
+    border: 1.4rem solid black;
+    width:40rem;
+    justify-content:center;
+    text-align:center;
+    border-radius: 18px;
+}
+
+video-flex{
+    width:10%;
+}
 
 .video-flex h1{
+    font-weight:400;
+    font-size: 2rem;
+    color: azure;
+    padding-bottom: .8rem;
 }
 
 .video-flex p{
+    font-weight:100;
+    font-size: 1rem;
+    color: azure;
+    padding-bottom: 2rem;
+    width: 80%;
+    justify-content:center;
+    text-align:center;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: inline-block;
+    line-height: 1.5;
+
 }
 
 .thesis h1{
