@@ -27,7 +27,7 @@ header .flex{
     margin: 0;
     position: fixed;
     z-index: 1;
-    height: 69px;
+    height: 80px;
     background-color: white;
     align-items: center;
     border-bottom: 1px solid seashell;
@@ -62,9 +62,19 @@ nav span {
 
 /*Nav bar mobile blocked on desktop*/
 
-.mobile {
-    display: none;
+@media only screen
+and (min-width: 480px)
+{
+    .mobile {
+            display: none;
+        }
 }
+
+header .mobile {
+        height: 4rem;
+        justify-content: space-around;
+        align-items: center;
+    }
 
 /*Main Body*/
 
@@ -463,21 +473,236 @@ footer a{
 ---------------------------------
 /*Responsive Design*/
 
+/*tablet*/
+
+@media only screen
+and (max-width: 1024px)
+and (min-width: 480px) {
+    .info-container {
+        display:none;
+    }
+    
+     .info-container .information {
+         display: none;
+    }
+
+    .information h1 {
+         display: none;
+    }
+
+    .information p {
+         display: none;
+    }
+    
+    .information img{
+        display: none;
+    }
+    
+    
+}
 
 /*phone*/
+/*phone jumbotron*/
+
+@media only screen and (min-width: 480px) {
+    .main-banner{
+        height: 20rem;
+        background-position: 30% 0;
+    }
+    
+    .main-banner div{
+        max-width: 100%;
+        left: 1rem;
+        bottom: 1rem;
+    }
+    
+    .main-banner .content h1{
+        font-weight: 600;
+        font-size: 2rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .main-banner .content h2 {
+            font-size: 1rem;
+            font-weight: 400;
+            padding-bottom: 1.2rem;
+        }
+    }
+   
+
 
 @media only screen
 and (max-width: 480px)
 and (min-width: 320px)
-and (orientation: portrait) {
- 
-  header .mobile img {
-    height: 2.7rem;
-    justify-content: space-around;
-    align-items: center; 
+{
+    
+    /*phone jumbotron*/
+     .info-container {
+        flex-wrap: wrap;
+        height: 18rem;
+    }
+
+    .info-container .information {
+        width: 100%;
+        height: 10rem; 
+        padding-top: 0.2rem;
+    }
+
+    .information h1 {
+        font-size: 1rem;
+        margin-top: 0.1rem;
+    }
+
+    .information p {
+        font-size: 1rem;
+        margin: 0 1rem 0.3rem 1rem;
+    }
+    
+    .information img{
+        display: none;
+    }
+    
+    .learn{
+    height: 29.45rem;
 }
     
+    #learn h1 {
+        display:none;
+    }
+    
+    #learn a {
+        display:none;
+    }
+    
+    .information1{
+        height: 28rem;
+    }
+/*courses*/
+    .container-courses{
+        flex-direction: column;
+    }
+    
+    .course-info{
+        flex-direction: column;
+        width: 100%;
+    }
+    .start span{
+        font-size: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+
+    .course-info img,
+    .course p{
+        display: none;
+    }
+
+    .course-info {
+        width: 15%;
+        height: 6rem;
+        margin: 0.5rem 0 0 0;
+        
+    }
+
+    .course-info h1 {
+        font-size: 1.2rem;
+        padding: 0rem 0;
+        color: white;
+    }
+    .course-info p {
+        font-size: .8rem;
+        padding-bottom: 0;
+        color: white;
+    }
+    
+    /*thesis*/
+    
+    .exhibit {
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+    
+.exhibit span {
+    color: white;
+    text-align: center;
+    width: 100%
+}
+
+.thesis {
+    width: 100%;
+}
+
+.thesis h1 {
+    font-weight: 400;
+    text-align: center;
+    align-content: center;
+}
+
+.thesis p {
+    font-weight: 300;
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+    color: gray;
+}
+
+#video {
+    margin: 1rem;
+}
+
+.container-video {
+    flex-direction: column;
+}
+
+.container-video video {
+    width: 72%;
+    text-align: center;
+    align-content: center;
+    }
+
+.container-video h1 {
+    margin: 1rem 0 0.5rem 0.7rem;
+    font-size: 1.5rem;
+    text-align: center;
+    align-content: center;
+}
+
+.container-video p {
+    max-width: 90%;
+    margin-left: 0.7rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.thesis-info {
+    flex-direction: column;
+    justify-content: space-between;
+    display: inline;
+}
+
+.thesis-info h1 {
+    margin-left: 1.5rem;
+}
+    .thesis-info p {
+    margin-left: 1.9rem;
+}
+
+.artical {
+    align-items: center;
+}
+
+.artical img {
+    width: 35%;
+}
+
+.artical div {
+    display: inline;
+}
 
 }
+ 
 
 
