@@ -142,6 +142,18 @@ main{
     border-radius: 12px;
 }
 
+.main-banner a:hover {
+  background-color: white;
+  color: indianred;
+}
+
+.main-banner a {
+  transition: background-color 750ms linear 100ms,
+color 750ms linear 750ms;
+
+}
+
+
 .main-banner div{
     flex-wrap: wrap;
     position: relative;
@@ -304,6 +316,17 @@ main{
     border-radius: 18px;
 }
 
+.start-content a:hover {
+  background-color: white;
+  color: indianred;
+}
+
+.start-content a {
+  transition: background-color 750ms linear 100ms,
+color 750ms linear 750ms;
+
+}
+
 /*Flex section (6 boxes)*/
  .start span {
     color: azure;
@@ -330,12 +353,13 @@ main{
     flex-flow: wrap;
     flex-direction:row-reverse;
     padding-top: 5px;
+    padding-bottom: 2.5rem;
     
 }
 
 .course-info {
   width: 11rem;
-  height: 10rem;
+  height: 12rem;
   background-color: black;
   opacity: 0.6;
   color: white;
@@ -362,7 +386,13 @@ main{
 }
 
 .course-info img {
-  width: 9rem;
+  width: 6rem;
+  display: block;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+
 
 }
 
@@ -455,7 +485,8 @@ video-flex{
 
 .thesis-info {
   color: white;
-  padding:1rem;
+  padding:3rem;
+  padding-top: 3rem;
   width: 20%;
   margin: 1.29rem;
   padding-bottom: 5rem;
