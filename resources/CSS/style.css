@@ -540,7 +540,7 @@ video-flex{
   padding-top: 3rem;
   width: 20%;
   margin: 1.29rem;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
 
 }
 
@@ -557,7 +557,6 @@ video-flex{
     font-weight:200;
     font-size: 1rem;
     color: azure;
-    padding-bottom: .2rem;
     padding-top: .5rem;
     padding-left: 1.05rem;
     width: 100%;
@@ -588,6 +587,7 @@ footer .copyright{
     font-size: .8rem;
     color: azure;
     flex-wrap: wrap;
+    padding-bottom: 0rem;
 }
 
 footer a{
