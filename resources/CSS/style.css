@@ -356,12 +356,14 @@ color 400ms linear 100ms;
 }
 
 .learn:hover {
-    height:30rem;
+    height:25rem;
 }
 
 .learn {
-    transition: height 600ms linear 1ms;
+    transition: height 200ms linear 30ms;
 }
+
+
 
 .start-content a:hover {
   background-color: white;
@@ -415,6 +417,10 @@ color 400ms linear 100ms;
 
 .course-info:hover {
     opacity: 1;
+}
+
+.course-info {
+    transition: opacity 150ms linear 10ms;
 }
 
 .course-info h1{
