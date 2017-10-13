@@ -271,6 +271,11 @@ color 400ms linear 100ms;
 }
 
 .information img{
+    transition: opacity 600ms linear 20ms;
+}
+
+
+.information img{
     transition: opacity 100ms linear 15ms, max-width 260ms ease-out 15ms;
 }
 
@@ -355,7 +360,7 @@ color 400ms linear 100ms;
 }
 
 .learn {
-    transition: height 650ms linear 1ms;
+    transition: height 600ms linear 1ms;
 }
 
 .start-content a:hover {
@@ -406,6 +411,10 @@ color 400ms linear 100ms;
   justify-content: space-between;
   border-radius: 12px;
     
+}
+
+.course-info:hover {
+    opacity: 1;
 }
 
 .course-info h1{
