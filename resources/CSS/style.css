@@ -397,30 +397,9 @@ color 400ms linear 100ms;
     flex-flow: wrap;
     flex-direction:row-reverse;
     padding-top: 5px;
-    padding-bottom: 2.5rem;
-     z-index:0; 
-    -webkit-transform: translateZ( 0 );
-    transform: translateZ( 0 );
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;   
+    padding-bottom: 2.5rem;   
 }
 
-a[ id= "target-scroll" ]:target ~ #target-scroll div.flex-container {
-    -webkit-transform: translateY( 0px);
-    transform: translateY( 0px );
-}
-
-a[ id= "target-scroll" ]:target ~ #target-scroll div.flex-container {
-    -webkit-transform: translateY( -500px );
-    transform: translateY( -500px );
-}
-
-a[ id= "target-scroll" ]:target ~ #target-scroll div.flex-container {
-    -webkit-transform: translateY( -1000px );
-    transform: translateY( -1000px );
-}
 
 .course-info {
   width: 11rem;
@@ -434,7 +413,6 @@ a[ id= "target-scroll" ]:target ~ #target-scroll div.flex-container {
   display: inline-block;
   justify-content: space-between;
   border-radius: 12px;
-    
 }
 
 .course-info:hover {
@@ -501,6 +479,7 @@ a[ id= "target-scroll" ]:target ~ #target-scroll div.flex-container {
     flex-flow: wrap;
     flex-direction:row;
     padding-top: 1.5rem;
+    padding-bottom: 1rem;
 }
 .video-detail{
     flex-flow: wrap;
@@ -509,7 +488,10 @@ a[ id= "target-scroll" ]:target ~ #target-scroll div.flex-container {
 }
 
 .video-flex video{
-    border: 1.4rem solid black;
+    border: 0.4rem solid black;
+    box-shadow:0 0 0 25px black, 
+               0 0 5px 27px grey;
+    border-radius:5px 5px 0 0;
     width:40rem;
     justify-content:center;
     text-align:center;
@@ -526,7 +508,7 @@ video-flex{
     font-size: 2rem;
     color: azure;
     padding-bottom: .8rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .video-flex p{
@@ -645,8 +627,7 @@ and (min-width: 480px) {
     .information img{
         display: none;
     }
-    
-    
+     
 }
 
 /*phone*/
