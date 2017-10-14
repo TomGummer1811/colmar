@@ -6,6 +6,15 @@
       <link href= "./resources/CSS/reset.css" type="text/css" rel="stylesheet">
       <link href= "./resources/CSS/style.css" type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,700|Lato:300,300i,400,700,900" rel="stylesheet">
+      
+     <script>
+$(document).ready(function){
+   $("link").click(function(){
+      $path=$("#target").offset().top; $('body').animate({scrollTop:$path},1000); 
+   }); 
+});      
+</script>
+      
   </head>
  <body>
      
@@ -16,10 +25,10 @@
         <img src="./resources/images/ic-logo.svg">
         <h1>COLMAR<span>ACADEMY</span></h1>
       <nav>
-        <span><a href="#scroll">On Campus</a></span>
-        <span><a href="#scroll">Online</a></span>
-          <span><a href="#scroll">Our Companies</a></span>
-        <span><a href="#scroll">Sign In</a></span>
+        <span><a href="#target" class="button"id="link">On Campus</a></span>
+        <span><a href="#target" class="button" id="link">Online</a></span>
+          <span><a href="#target" class="button"id="link">Our Companies</a></span>
+        <span><a href="#target" class="button"id="link">Sign In</a></span>
       </nav>
     </div>
 
@@ -42,7 +51,7 @@
         <div class="content">
           <h1>Learn Something New Everyday</h1>
           <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-         <a href="#start">Start here</a>
+         <a href="#target" class="button" id="link">Start here</a>
         </div> 
       </div>
   </div>
@@ -92,7 +101,7 @@
   <div class="start-content">
           
     <h1>Start Learning</h1>
-      <a href="#start">Jump today</a>
+      <a href="#target" class="button" id="link">Jump today</a>
   </div> 
 </section>
      
@@ -104,13 +113,13 @@
 <!-- Side flex section (6 boxes) -->
 
 
-<div class="category flex">
+<div id = "courses" class="category flex">
 <!-- Heading -->
     
-<div id = "courses" class = "container-courses">
+<div class = "container-courses">
 <!-- Box 1 -->
     
-<div id= "scroll" class = "courses-detail flex-container">
+<div id= "target" class = "courses-detail flex-container">
     
     <div class="course-info">
           <img src="resources/images/icon-software-engineering-white.png">
