@@ -228,7 +228,8 @@ color 400ms linear 1ms;
     font-style: italic;
     font-weight: 150px;
     line-height: 1.1rem;
-    padding-bottom: 0.1rem;
+    padding:0rem;
+    padding-right: 3rem;
     text-shadow: 1px 1px hsl(200, 20%, 50%);
 }
 
@@ -270,7 +271,7 @@ color 400ms linear 1ms;
 }
 .information img:hover {
     opacity: 1;
-    max-width: 18rem;
+    max-width: 16rem;
 }
 
 .information img{
@@ -486,7 +487,7 @@ color 400ms linear 1ms;
     width: 100%;
     flex-flow: wrap;
     flex-direction:row;
-    padding-top: 1.5rem;
+    padding-top: 3.5rem;
     padding-bottom: 1rem;
 }
 .video-detail{
@@ -524,7 +525,7 @@ video-flex{
     font-weight:200;
     font-size: 1rem;
     color: azure;
-    padding-bottom: .2rem;
+    padding-bottom: .01rem;
     width: 80%;
     justify-content:center;
     text-align:center;
@@ -555,14 +556,14 @@ video-flex{
   width: 20%;
   margin: 1.29rem;
   padding-bottom: 1rem;
-
+  align-content: center;  
 }
 
 .thesis-info h1{
     font-weight: 700;
     width: 100%;
     font-size: 1.05rem;
-    padding-left: 1.1rem;
+    padding-left: 2.1rem;
     padding-top:.5rem;
     text-align: center;
     text-shadow: 1px 1px hsl(200, 20%, 50%);
@@ -572,7 +573,7 @@ video-flex{
     font-weight:200;
     font-size: 1rem;
     color: azure;
-    padding-top: .5rem;
+    padding-top: 0.1rem;
     padding-left: 1.05rem;
     width: 100%;
     justify-content:center;
@@ -617,9 +618,8 @@ footer a, p{
 
 /*tablet*/
 
-@media only screen
-and (max-width: 1024px)
-and (min-width: 480px) {
+@media only screen and (max-width: 1024px) {
+   
     .info-container {
         display:none;
     }
@@ -639,8 +639,9 @@ and (min-width: 480px) {
     .information img{
         display: none;
     }
-     
 }
+
+ 
 
 /*phone*/
 /*phone jumbotron*/
@@ -682,8 +683,6 @@ and (min-width: 320px)
     
     .main-banner .content {
         display: flex;
-        align-content: 
-
 
 }
      .main-banner .content a {
