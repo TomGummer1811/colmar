@@ -437,7 +437,7 @@ color 400ms linear 1ms;
     text-align: center;
 }
 .course-info p{
-    padding-top: .9rem;
+    padding-top: .01rem;
     font-weight: 100;
     text-align: center;
     font-size: .9rem;
@@ -449,8 +449,8 @@ color 400ms linear 1ms;
   align-content: center;
   display: block;
   margin-left: auto;
-  margin-right: auto 
-
+  margin-right: auto;
+  padding-bottom: 0rem;
 
 }
 
